@@ -165,41 +165,6 @@ class _MainPageState extends State<MainPage> {
           return const Text("Undefined State!");
         },
       ),
-      // drawer: Drawer(
-      //   child: BlocBuilder<CubitForNoteApp, StatesForNotesApp>(
-      //     builder: (context, state) {
-      //       if (state is StateReadyForFetchingNotesData) {
-      //         return const LinearProgressIndicator();
-      //       } else if (state is StateFetchingNotesDataSuccessfully) {
-      //         List<Note> notes = state.notes;
-      //         return ListView.builder(
-      //             itemCount: notes.length,
-      //             itemBuilder: (context, index) {
-      //               return ListTile(
-      //                 trailing: IconButton(
-      //                   onPressed: () {
-      //                     context.read<CubitForNoteApp>().fetchingNotesData(
-      //                         category: notes[index].category);
-      //                   },
-      //                   icon: const Icon(
-      //                     Icons.remove,
-      //                     color: Colors.blue,
-      //                   ),
-      //                 ),
-      //                 title: Text(notes[index].category),
-      //               );
-      //             });
-      //       } else if (state is StateFetchingNotesDataUnsuccessfully) {
-      //         return Text(state.errorExp);
-      //       } else if (state is StateAddingNotesDataSuccessfully) {
-      //         return const Text("Note was added successfully!");
-      //       } else if (state is StateDeletingNotesDataSuccessfully) {
-      //         return const Text("Note was deleted successfully");
-      //       }
-      //       return const Text("Undefined State!");
-      //     },
-      //   ),
-      // ),
     );
   }
 }
