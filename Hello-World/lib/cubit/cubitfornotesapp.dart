@@ -11,9 +11,7 @@ class CubitForNoteApp extends Cubit<StatesForNotesApp> {
   /*
         ايه رستم
       */
-  Future<List<Note>> fetchingNotesData(
-      // {String? category}
-      ) async {
+  Future<List<Note>> fetchingNotesData() async {
     List<Note> allnotes = [];
     final database = await SqliteDatabase.sqlitedatabase();
     try {
@@ -21,17 +19,10 @@ class CubitForNoteApp extends Cubit<StatesForNotesApp> {
       final List<Map<String, dynamic>> maps = await database.query("notes");
 
       for (int i = 0; i < maps.length; i++) {
-        // if (category == null) {
         allnotes.add(Note(
             id: maps[i]['id'] as int,
             content: maps[i]['content'] as String,
             category: maps[i]['category'] as String));
-        // } else if (maps[i]['category'] as String == category) {
-        // allnotes.add(Note(
-        //     id: maps[i]['id'] as int,
-        //     content: maps[i]['content'] as String,
-        //     category: maps[i]['category'] as String));
-        // }
       }
       emit(StateFetchingNotesDataSuccessfully(notes: allnotes));
     } catch (errorExp) {
