@@ -4,16 +4,19 @@ class Note {
   final String category;
 
   Note({this.id, required this.content, required this.category});
+  
   /*
-    زينب احمد
+    زينب احمد احمد
   */
+  
   Map<String, dynamic> toMap() {
     return {'id': id, 'content': content, 'category': category};
   }
 
   /*
-      رنيم الجندي
+      رنيم سلمان الجندي
   */
+ 
   @override
   String toString() {
     return 'Note (id:$id,content:$content,category:$category)';
