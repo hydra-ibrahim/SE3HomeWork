@@ -5,9 +5,11 @@ import 'package:helloworld/cubit/statesfornoteapp.dart';
 import 'package:helloworld/model/note.dart';
 
 class MainPage extends StatefulWidget {
+  
   /*
-    زينب ابراهيم
+    زينب ياسين ابراهيم
   */
+  
   const MainPage({super.key});
 
   @override
@@ -22,9 +24,11 @@ class _MainPageState extends State<MainPage> {
     return Scaffold(
       appBar: AppBar(
         toolbarHeight: 300,
+        
         /*
-              حيدره ابراهيم
+              حيدره عبد اللطيف ابراهيم
         */
+        
         title: Form(
             key: keyForForm,
             child: Column(children: [
@@ -49,9 +53,11 @@ class _MainPageState extends State<MainPage> {
                 maxLength: 96,
                 keyboardType: TextInputType.multiline,
                 decoration: InputDecoration(
+                  
                   /*
-                    مها التقي
+                    مها مهند التقي
                   */
+                  
                   filled: true,
                   fillColor: Colors.limeAccent[100],
                   hintText: "Enter note content",
@@ -82,9 +88,11 @@ class _MainPageState extends State<MainPage> {
                 },
                 controller: context.read<CubitForNoteApp>().categoryController,
                 decoration: InputDecoration(
+                  
                   /*
-                    خاتون بدرية
+                    خاتون اياد بدرية
                   */
+                  
                   filled: true,
                   fillColor: Colors.limeAccent[100],
                   hintText: "Enter category",
@@ -115,9 +123,11 @@ class _MainPageState extends State<MainPage> {
               icon: const Icon(Icons.add, color: Colors.white, size: 25)),
           ElevatedButton(
             onPressed: () {
+              
               /*
-                    ديما رجب
+                    ديمه علاء الدين رجب
               */
+              
               context.read<CubitForNoteApp>().someNoteData();
               context.read<CubitForNoteApp>().fetchingNotesData();
             },
