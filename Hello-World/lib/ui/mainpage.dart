@@ -136,6 +136,11 @@ class _MainPageState extends State<MainPage> {
         ],
         backgroundColor: Colors.orange,
       ),
+
+            /*
+                                مشترك
+            */      
+    
       body: BlocBuilder<CubitForNoteApp, StatesForNotesApp>(
         builder: (context, state) {
           if (state is StateReadyForFetchingNotesData) {
