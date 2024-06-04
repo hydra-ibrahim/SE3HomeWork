@@ -6,7 +6,7 @@ class Note {
   Note({this.id, required this.content, required this.category});
   
   /*
-    زينب احمد احمد
+    زينب يوسف احمد
   */
   
   Map<String, dynamic> toMap() {
@@ -14,7 +14,7 @@ class Note {
   }
 
   /*
-      رنيم سلمان الجندي
+      رنيم وائل الجندي
   */
  
   @override
