@@ -9,7 +9,7 @@ class CubitForNoteApp extends Cubit<StatesForNotesApp> {
   CubitForNoteApp() : super(InitialStateForNotesApp());
 
   /*
-        ايه رستم
+        ايه علي رستم
       */
   Future<List<Note>> fetchingNotesData() async {
     List<Note> allnotes = [];
@@ -44,7 +44,7 @@ class CubitForNoteApp extends Cubit<StatesForNotesApp> {
   }
 
   /*
-        لميس سلطاني
+        لميس باسل سلطاني
       */
   Future<void> addNewNote() async {
     final database = await SqliteDatabase.sqlitedatabase();
@@ -63,7 +63,7 @@ class CubitForNoteApp extends Cubit<StatesForNotesApp> {
   }
 
   /*
-        جنان شباني
+        جنان ابراهيم شباني
       */
   Future<void> deleteNote({required int id}) async {
     final database = await SqliteDatabase.sqlitedatabase();
@@ -77,7 +77,7 @@ class CubitForNoteApp extends Cubit<StatesForNotesApp> {
   }
 
   /*
-        حيدره ابراهيم
+        حيدره عبد اللطيف ابراهيم
       */
   someNoteData() {
     for (int i = 0; i < 500; i++) {
